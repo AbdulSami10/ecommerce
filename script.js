@@ -1096,9 +1096,13 @@ class FeaturedCarousel {
     renderCards() {
         const featured = products.filter(p => p.featured);
 
-        this.track.innerHTML = featured.map(product => `
+        this.track.innerHTML = featured.map(product => {
+            const imageContent = product.image ?
+                `<img src="${product.image}" alt="${product.name}">` : product.emoji;
+
+            return `
             <div class="featured-card" data-id="${product.id}">
-                <div class="featured-card-image">${product.emoji}</div>
+                <div class="featured-card-image">${imageContent}</div>
                 <div class="featured-card-content">
                     ${product.badge ? `<span class="featured-card-badge badge-${product.badge}">${product.badge}</span>` : ''}
                     <h3 class="featured-card-title">${product.name}</h3>
@@ -1108,7 +1112,7 @@ class FeaturedCarousel {
                     </p>
                 </div>
             </div>
-        `).join('');
+        `}).join('');
 
         this.track.querySelectorAll('.featured-card').forEach(card => {
             card.addEventListener('click', () => {
