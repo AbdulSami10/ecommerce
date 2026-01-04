@@ -1703,6 +1703,32 @@ select {
     box-shadow: var(--shadow-glow);
 }
 
+/* Product Card Action Buttons */
+.product-card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: var(--transition-normal);
+}
+
+.product-card:hover .product-card-actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card-actions .btn {
+    flex: 1;
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.product-card-actions .btn-secondary {
+    font-size: 13px;
+}
+
 /* Skeleton Loader */
 .product-skeleton {
     background: var(--glass);
@@ -2093,6 +2119,8 @@ select {
         transform: translateX(-100%);
         transition: var(--transition-normal);
         overflow-y: auto;
+        background: var(--bg-secondary);
+        backdrop-filter: blur(20px);
     }
 
     .filter-sidebar.active {
@@ -2336,6 +2364,7 @@ select {
 
 .cart-footer {
     padding: 24px;
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
     border-top: 1px solid var(--glass-border);
     background: var(--bg-primary);
 }
@@ -2782,6 +2811,22 @@ select {
 @media (max-width: 768px) {
     .cart-sidebar {
         width: 100%;
+    }
+
+    .cart-footer {
+        padding-bottom: max(32px, env(safe-area-inset-bottom) + 16px);
+    }
+
+    /* Make product actions always visible on mobile */
+    .product-actions {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Make product card action buttons always visible on mobile */
+    .product-card-actions {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .modal-body {
