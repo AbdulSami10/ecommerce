@@ -12,8 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -63,6 +61,14 @@
                 </button>
             </div>
         </nav>
+        <div id="mobile-menu" class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+                <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -293,8 +299,8 @@
     </footer>
 
     <div id="toast-container" class="toast-container"></div>
-
-    <script src="script.js"></script>
+    <!-- JavaScript (Modular) -->
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
