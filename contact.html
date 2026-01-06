@@ -1,316 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with NEXUS - We'd love to hear from you.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with NEXUS - We'd love to hear from you."
+    />
     <title>Contact Us | NEXUS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div id="particles-container" class="particles-container"></div>
     <div class="cursor cursor-dot"></div>
     <div class="cursor cursor-outline"></div>
 
     <!-- Header -->
     <header id="header" class="header scrolled">
-        <nav class="nav container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">◈</span>
-                <span class="logo-text">NEXUS</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="products.html" class="nav-link">Products</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" class="nav-btn magnetic-btn" aria-label="Toggle Theme">
-                    <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-                <button id="cart-toggle" class="nav-btn magnetic-btn cart-btn" aria-label="Shopping Cart">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <path d="M16 10a4 4 0 0 1-8 0"></path>
-                    </svg>
-                    <span id="cart-count" class="cart-count">0</span>
-                </button>
-                <button id="mobile-menu-toggle" class="nav-btn mobile-menu-btn" aria-label="Menu">
-                    <span class="hamburger"></span>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="mobile-menu">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                <li><a href="products.html" class="mobile-nav-link">Products</a></li>
-                <li><a href="about.html" class="mobile-nav-link">About</a></li>
-                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-            </ul>
+      <nav class="nav container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">NEXUS</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            id="theme-toggle"
+            class="nav-btn magnetic-btn"
+            aria-label="Toggle Theme"
+          >
+            <svg
+              class="theme-icon-dark"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="theme-icon-light"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button
+            id="cart-toggle"
+            class="nav-btn magnetic-btn cart-btn"
+            aria-label="Shopping Cart"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+          <button
+            id="mobile-menu-toggle"
+            class="nav-btn mobile-menu-btn"
+            aria-label="Menu"
+          >
+            <span class="hamburger"></span>
+          </button>
         </div>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <div class="page-header-content">
-                    <span class="section-badge">◈ GET IN TOUCH</span>
-                    <h1 class="page-title">Contact <span class="gradient-text">Us</span></h1>
-                    <p class="page-description">We'd love to hear from you. Send us a message and we'll respond as soon
-                        as possible.</p>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="section-badge">◈ GET IN TOUCH</span>
+            <h1 class="page-title">
+              Contact <span class="gradient-text">Us</span>
+            </h1>
+            <p class="page-description">
+              We'd love to hear from you. Send us a message and we'll respond as
+              soon as possible.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-container animate-on-scroll">
+              <h2>Send a <span class="gradient-text">Message</span></h2>
+              <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      required
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      required
+                      placeholder="your@email.com"
+                    />
+                  </div>
                 </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label>
+                  <select id="contact-subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="order">Order Support</option>
+                    <option value="product">Product Question</option>
+                    <option value="returns">Returns & Refunds</option>
+                    <option value="partnership">Partnership</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="How can we help you?"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary magnetic-btn">
+                  <span>Send Message</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-grid">
-                    <!-- Contact Form -->
-                    <div class="contact-form-container animate-on-scroll">
-                        <h2>Send a <span class="gradient-text">Message</span></h2>
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="contact-name">Name</label>
-                                    <input type="text" id="contact-name" name="name" required placeholder="Your name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-email">Email</label>
-                                    <input type="email" id="contact-email" name="email" required
-                                        placeholder="your@email.com">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-subject">Subject</label>
-                                <select id="contact-subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="order">Order Support</option>
-                                    <option value="product">Product Question</option>
-                                    <option value="returns">Returns & Refunds</option>
-                                    <option value="partnership">Partnership</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-message">Message</label>
-                                <textarea id="contact-message" name="message" rows="5" required
-                                    placeholder="How can we help you?"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary magnetic-btn">
-                                <span>Send Message</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
+            <!-- Contact Info -->
+            <div class="contact-info animate-on-scroll">
+              <h2>Contact <span class="gradient-text">Information</span></h2>
 
-                    <!-- Contact Info -->
-                    <div class="contact-info animate-on-scroll">
-                        <h2>Contact <span class="gradient-text">Information</span></h2>
-
-                        <div class="info-cards">
-                            <div class="info-card">
-                                <div class="info-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="info-content">
-                                    <h4>Visit Us</h4>
-                                    <p>123 Tech Plaza, Silicon Valley<br>San Francisco, CA 94102</p>
-                                </div>
-                            </div>
-
-                            <div class="info-card">
-                                <div class="info-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="info-content">
-                                    <h4>Call Us</h4>
-                                    <p>+1 (555) 123-4567<br>Mon-Fri, 9am-6pm PST</p>
-                                </div>
-                            </div>
-
-                            <div class="info-card">
-                                <div class="info-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                        </path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="info-content">
-                                    <h4>Email Us</h4>
-                                    <p>support@nexus.com<br>sales@nexus.com</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-section">
-                            <h4>Follow Us</h4>
-                            <div class="social-links">
-                                <a href="#" class="social-link magnetic-btn" aria-label="Twitter">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                    </svg>
-                                </a>
-                                <a href="#" class="social-link magnetic-btn" aria-label="Instagram">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    </svg>
-                                </a>
-                                <a href="#" class="social-link magnetic-btn" aria-label="LinkedIn">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path
-                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                        </path>
-                                        <rect x="2" y="9" width="4" height="12"></rect>
-                                        <circle cx="4" cy="4" r="2"></circle>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+              <div class="info-cards">
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Visit Us</h4>
+                    <p>
+                      123 Tech Plaza, Silicon Valley<br />San Francisco, CA
+                      94102
+                    </p>
+                  </div>
                 </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Call Us</h4>
+                    <p>+1 (555) 123-4567<br />Mon-Fri, 9am-6pm PST</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Email Us</h4>
+                    <p>support@nexus.com<br />sales@nexus.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                  <a
+                    href="#"
+                    class="social-link magnetic-btn"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-link magnetic-btn"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-link magnetic-btn"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      ></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-badge">◈ FAQ</span>
-                    <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-                </div>
-                <div class="faq-grid animate-on-scroll">
-                    <div class="faq-item">
-                        <h4>What is your return policy?</h4>
-                        <p>We offer a 30-day return policy for all products in original condition. Simply contact our
-                            support team to initiate a return.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>How long does shipping take?</h4>
-                        <p>Standard shipping takes 3-5 business days. Express shipping is available for 1-2 day
-                            delivery.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Do you ship internationally?</h4>
-                        <p>Yes! We ship to over 25 countries worldwide. Shipping times and costs vary by location.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>What warranty do products come with?</h4>
-                        <p>All products come with a minimum 1-year manufacturer warranty. Extended warranties are
-                            available on select items.</p>
-                    </div>
-                </div>
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-badge">◈ FAQ</span>
+            <h2 class="section-title">
+              Frequently Asked <span class="gradient-text">Questions</span>
+            </h2>
+          </div>
+          <div class="faq-grid animate-on-scroll">
+            <div class="faq-item">
+              <h4>What is your return policy?</h4>
+              <p>
+                We offer a 30-day return policy for all products in original
+                condition. Simply contact our support team to initiate a return.
+              </p>
             </div>
-        </section>
+            <div class="faq-item">
+              <h4>How long does shipping take?</h4>
+              <p>
+                Standard shipping takes 3-5 business days. Express shipping is
+                available for 1-2 day delivery.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Do you ship internationally?</h4>
+              <p>
+                Yes! We ship to over 25 countries worldwide. Shipping times and
+                costs vary by location.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>What warranty do products come with?</h4>
+              <p>
+                All products come with a minimum 1-year manufacturer warranty.
+                Extended warranties are available on select items.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">◈</span>
-                        <span class="logo-text">NEXUS</span>
-                    </a>
-                    <p class="footer-tagline">Redefining the future of luxury tech shopping.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Shop</h4>
-                    <ul>
-                        <li><a href="products.html">All Products</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 NEXUS. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <span class="logo-icon">◈</span>
+              <span class="logo-text">NEXUS</span>
+            </a>
+            <p class="footer-tagline">
+              Redefining the future of luxury tech shopping.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 NEXUS. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Cart Sidebar -->
     <div id="cart-overlay" class="cart-overlay"></div>
     <aside id="cart-sidebar" class="cart-sidebar">
-        <div class="cart-header">
-            <h3>Your Cart</h3>
-            <button id="cart-close" class="cart-close">&times;</button>
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="cart-close" class="cart-close">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <div class="cart-empty">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+          >
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <p>Your cart is empty</p>
+          <a href="products.html" class="btn btn-secondary">Start Shopping</a>
         </div>
-        <div id="cart-items" class="cart-items">
-            <div class="cart-empty">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg>
-                <p>Your cart is empty</p>
-                <a href="products.html" class="btn btn-secondary">Start Shopping</a>
-            </div>
+      </div>
+      <div id="cart-footer" class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cart-total">$0.00</span>
         </div>
-        <div id="cart-footer" class="cart-footer">
-            <div class="cart-subtotal">
-                <span>Subtotal</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-            <button id="checkout-btn" class="btn btn-primary checkout-btn magnetic-btn">Checkout</button>
-        </div>
+        <button
+          id="checkout-btn"
+          class="btn btn-primary checkout-btn magnetic-btn"
+        >
+          Checkout
+        </button>
+      </div>
     </aside>
 
     <div id="toast-container" class="toast-container"></div>
 
     <!-- JavaScript (Modular) -->
     <script type="module" src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

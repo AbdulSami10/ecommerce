@@ -4,7 +4,7 @@
 
 **Premium Tech & Lifestyle E-Commerce Platform**
 
-*Experience the Future of Luxury Tech Shopping*
+_Experience the Future of Luxury Tech Shopping_
 
 [![Made with HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Made with CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -20,6 +20,7 @@
 **NEXUS** is a cutting-edge, premium e-commerce platform designed for luxury tech and lifestyle products. Built with modern web technologies, it delivers a stunning user experience with smooth animations, glassmorphism effects, and a responsive design that works flawlessly across all devices.
 
 This project showcases advanced front-end development with a focus on:
+
 - **Premium UI/UX Design** with modern aesthetics
 - **Modular ES6 Architecture** for maintainability
 - **Smooth Animations** and interactive elements
@@ -32,6 +33,7 @@ This project showcases advanced front-end development with a focus on:
 ## ✨ Features
 
 ### 🛍️ E-Commerce Functionality
+
 - **Product Catalog** - Browse 12+ curated premium tech products
 - **Shopping Cart** - Add, remove, and update quantities with real-time total calculation
 - **Checkout System** - Complete order form with validation
@@ -40,6 +42,7 @@ This project showcases advanced front-end development with a focus on:
 - **Persistent Cart** - Cart state saved in localStorage
 
 ### 🎨 Design & UI
+
 - **Custom Cursor** - Magnetic interactive cursor for desktop
 - **Particle Background** - Dynamic particle effects
 - **Glassmorphism** - Modern frosted glass UI components
@@ -49,6 +52,7 @@ This project showcases advanced front-end development with a focus on:
 - **Responsive Navigation** - Mobile-first hamburger menu
 
 ### 🏗️ Technical Features
+
 - **ES6 Modules** - Clean, organized codebase
 - **Modular Architecture** - Separated concerns (data, UI, cart, animations)
 - **No Dependencies** - Pure vanilla JavaScript
@@ -92,6 +96,7 @@ ecommerce/
 ### Prerequisites
 
 You need one of the following to run the project:
+
 - **Python 3.x** (easiest option)
 - **VS Code** with Live Server extension
 - **Node.js** with npx
@@ -99,6 +104,7 @@ You need one of the following to run the project:
 ### Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/AbdulSami10/ecommerce.git
    cd ecommerce
@@ -109,16 +115,20 @@ You need one of the following to run the project:
    **⚠️ IMPORTANT:** Do NOT open `index.html` directly in your browser. The project uses ES6 modules which require a web server due to CORS restrictions.
 
    **Option 1: Python Server (Recommended)**
+
    ```bash
    python -m http.server 8080
    ```
+
    Then open: **http://localhost:8080**
 
    **Option 2: VS Code Live Server**
+
    - Install the "Live Server" extension
    - Right-click any `.html` file → "Open with Live Server"
 
    **Option 3: Node.js**
+
    ```bash
    npx http-server -p 8080
    ```
@@ -132,6 +142,7 @@ You need one of the following to run the project:
 ## 🎯 Usage
 
 ### Shopping Experience
+
 1. **Browse Products** - Explore featured items on the homepage or visit the products page
 2. **Filter & Search** - Use category filters, price range sliders, and search bar
 3. **View Details** - Click "Quick View" or product images for detailed information
@@ -139,9 +150,11 @@ You need one of the following to run the project:
 5. **Checkout** - Click "Proceed to Checkout" and fill out the order form
 
 ### Theme Switching
+
 - Click the sun/moon icon in the header to toggle between light and dark themes
 
 ### Interactive Features
+
 - Hover over buttons for magnetic cursor effects (desktop)
 - Scroll to trigger fade-in animations
 - Experience smooth carousels on the homepage
@@ -150,21 +163,22 @@ You need one of the following to run the project:
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|-----------|---------|
-| **HTML5** | Semantic structure and SEO |
-| **CSS3** | Styling, animations, and responsive design |
-| **JavaScript (ES6+)** | Interactive functionality |
-| **ES6 Modules** | Code organization and reusability |
-| **LocalStorage API** | Persistent shopping cart |
-| **Google Fonts** | Typography (Inter, Outfit) |
-| **Unsplash API** | High-quality product images |
+| Technology            | Purpose                                    |
+| --------------------- | ------------------------------------------ |
+| **HTML5**             | Semantic structure and SEO                 |
+| **CSS3**              | Styling, animations, and responsive design |
+| **JavaScript (ES6+)** | Interactive functionality                  |
+| **ES6 Modules**       | Code organization and reusability          |
+| **LocalStorage API**  | Persistent shopping cart                   |
+| **Google Fonts**      | Typography (Inter, Outfit)                 |
+| **Unsplash API**      | High-quality product images                |
 
 ---
 
 ## 📱 Responsive Design
 
 NEXUS is fully responsive and optimized for:
+
 - 📱 **Mobile** (320px - 767px)
 - 📱 **Tablet** (768px - 1023px)
 - 💻 **Desktop** (1024px+)
@@ -175,15 +189,18 @@ NEXUS is fully responsive and optimized for:
 ## 🎨 Design Philosophy
 
 ### Color Palette
+
 - **Primary Gradient**: Purple to pink (`#6366f1` → `#a855f7`)
 - **Dark Theme**: Rich dark backgrounds with vibrant accents
 - **Light Theme**: Clean whites with subtle grays
 
 ### Typography
+
 - **Headings**: Outfit (Bold, 600-800 weight)
 - **Body Text**: Inter (300-500 weight)
 
 ### Effects
+
 - Glassmorphism with backdrop blur
 - Smooth CSS transitions (0.3s ease)
 - Hover states with scale and glow effects
@@ -194,6 +211,7 @@ NEXUS is fully responsive and optimized for:
 ## 📦 Key Components
 
 ### Product Card
+
 - Product image with hover effects
 - Badge indicators (New, Sale, Trending)
 - Star ratings and review counts
@@ -201,6 +219,7 @@ NEXUS is fully responsive and optimized for:
 - Quick view and add-to-cart buttons
 
 ### Shopping Cart
+
 - Sidebar overlay with smooth slide-in
 - Item list with thumbnails
 - Quantity adjustment controls
@@ -208,6 +227,7 @@ NEXUS is fully responsive and optimized for:
 - Persistent across sessions
 
 ### Carousels
+
 - Featured products carousel
 - Customer testimonials slider
 - Touch-enabled for mobile devices
@@ -243,6 +263,7 @@ NEXUS is fully responsive and optimized for:
 ## 👨‍💻 Author
 
 **Abdul Sami**
+
 - GitHub: [@AbdulSami10](https://github.com/AbdulSami10)
 - Project: NEXUS E-Commerce Platform
 
@@ -266,7 +287,7 @@ This project is open source and available for educational purposes.
 
 **Built with 💙 by Abdul Sami**
 
-*Making luxury tech shopping accessible and beautiful*
+_Making luxury tech shopping accessible and beautiful_
 
 ⭐ Star this repo if you found it helpful!
 

@@ -1,254 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product details at NEXUS">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product details at NEXUS" />
     <title>Product | NEXUS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div id="particles-container" class="particles-container"></div>
     <div class="cursor cursor-dot"></div>
     <div class="cursor cursor-outline"></div>
 
     <!-- Header -->
     <header id="header" class="header scrolled">
-        <nav class="nav container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">◈</span>
-                <span class="logo-text">NEXUS</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="products.html" class="nav-link">Products</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" class="nav-btn magnetic-btn" aria-label="Toggle Theme">
-                    <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-                <button id="cart-toggle" class="nav-btn magnetic-btn cart-btn" aria-label="Shopping Cart">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <path d="M16 10a4 4 0 0 1-8 0"></path>
-                    </svg>
-                    <span id="cart-count" class="cart-count">0</span>
-                </button>
-                <button id="mobile-menu-toggle" class="nav-btn mobile-menu-btn" aria-label="Menu">
-                    <span class="hamburger"></span>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="mobile-menu">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                <li><a href="products.html" class="mobile-nav-link">Products</a></li>
-                <li><a href="about.html" class="mobile-nav-link">About</a></li>
-                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-            </ul>
+      <nav class="nav container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">NEXUS</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            id="theme-toggle"
+            class="nav-btn magnetic-btn"
+            aria-label="Toggle Theme"
+          >
+            <svg
+              class="theme-icon-dark"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="theme-icon-light"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button
+            id="cart-toggle"
+            class="nav-btn magnetic-btn cart-btn"
+            aria-label="Shopping Cart"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+          <button
+            id="mobile-menu-toggle"
+            class="nav-btn mobile-menu-btn"
+            aria-label="Menu"
+          >
+            <span class="hamburger"></span>
+          </button>
         </div>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <!-- Breadcrumb -->
-        <section class="breadcrumb-section">
-            <div class="container">
-                <nav class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span>/</span>
-                    <a href="products.html">Products</a>
-                    <span>/</span>
-                    <span id="breadcrumb-product">Product</span>
-                </nav>
+      <!-- Breadcrumb -->
+      <section class="breadcrumb-section">
+        <div class="container">
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="products.html">Products</a>
+            <span>/</span>
+            <span id="breadcrumb-product">Product</span>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Product Detail -->
+      <section class="product-detail-section">
+        <div class="container">
+          <div class="product-detail-grid" id="product-detail">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+              <div class="gallery-main-large">
+                <img id="product-main-image" src="" alt="Product Image" />
+                <div id="product-main-emoji" class="product-detail-emoji"></div>
+              </div>
+              <div class="gallery-thumbnails" id="product-thumbnails"></div>
             </div>
-        </section>
 
-        <!-- Product Detail -->
-        <section class="product-detail-section">
-            <div class="container">
-                <div class="product-detail-grid" id="product-detail">
-                    <!-- Product Gallery -->
-                    <div class="product-gallery">
-                        <div class="gallery-main-large">
-                            <img id="product-main-image" src="" alt="Product Image">
-                            <div id="product-main-emoji" class="product-detail-emoji"></div>
-                        </div>
-                        <div class="gallery-thumbnails" id="product-thumbnails"></div>
-                    </div>
+            <!-- Product Info -->
+            <div class="product-info">
+              <div class="product-badges-detail" id="product-badges"></div>
+              <h1 id="product-name" class="product-detail-title"></h1>
+              <div class="product-meta">
+                <div class="product-rating-detail" id="product-rating"></div>
+                <span
+                  class="product-category-detail"
+                  id="product-category"
+                ></span>
+              </div>
+              <div class="product-price-detail" id="product-price"></div>
+              <p
+                class="product-description-detail"
+                id="product-description"
+              ></p>
 
-                    <!-- Product Info -->
-                    <div class="product-info">
-                        <div class="product-badges-detail" id="product-badges"></div>
-                        <h1 id="product-name" class="product-detail-title"></h1>
-                        <div class="product-meta">
-                            <div class="product-rating-detail" id="product-rating"></div>
-                            <span class="product-category-detail" id="product-category"></span>
-                        </div>
-                        <div class="product-price-detail" id="product-price"></div>
-                        <p class="product-description-detail" id="product-description"></p>
-
-                        <div class="product-options">
-                            <div class="quantity-selector">
-                                <label>Quantity</label>
-                                <div class="quantity-controls">
-                                    <button id="detail-qty-decrease" class="qty-btn">-</button>
-                                    <input type="number" id="detail-quantity" value="1" min="1" max="10">
-                                    <button id="detail-qty-increase" class="qty-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product-actions-detail">
-                            <button id="detail-add-to-cart" class="btn btn-primary magnetic-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                                </svg>
-                                <span>Add to Cart</span>
-                            </button>
-                            <button class="btn btn-secondary wishlist-btn magnetic-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                    </path>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="product-features">
-                            <div class="feature-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <rect x="1" y="3" width="15" height="13"></rect>
-                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                                </svg>
-                                <span>Free Shipping</span>
-                            </div>
-                            <div class="feature-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="23 4 23 10 17 10"></polyline>
-                                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-                                </svg>
-                                <span>30-Day Returns</span>
-                            </div>
-                            <div class="feature-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                                <span>2 Year Warranty</span>
-                            </div>
-                        </div>
-                    </div>
+              <div class="product-options">
+                <div class="quantity-selector">
+                  <label>Quantity</label>
+                  <div class="quantity-controls">
+                    <button id="detail-qty-decrease" class="qty-btn">-</button>
+                    <input
+                      type="number"
+                      id="detail-quantity"
+                      value="1"
+                      min="1"
+                      max="10"
+                    />
+                    <button id="detail-qty-increase" class="qty-btn">+</button>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <!-- Related Products -->
-        <section class="related-products-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">◈ YOU MAY ALSO LIKE</span>
-                    <h2 class="section-title">Related <span class="gradient-text">Products</span></h2>
+              <div class="product-actions-detail">
+                <button
+                  id="detail-add-to-cart"
+                  class="btn btn-primary magnetic-btn"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                    ></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="btn btn-secondary wishlist-btn magnetic-btn">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="product-features">
+                <div class="feature-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon
+                      points="16 8 20 8 23 11 23 16 16 16 16 8"
+                    ></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                  <span>Free Shipping</span>
                 </div>
-                <div class="related-products-grid" id="related-products"></div>
+                <div class="feature-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                  </svg>
+                  <span>30-Day Returns</span>
+                </div>
+                <div class="feature-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    ></path>
+                  </svg>
+                  <span>2 Year Warranty</span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Products -->
+      <section class="related-products-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">◈ YOU MAY ALSO LIKE</span>
+            <h2 class="section-title">
+              Related <span class="gradient-text">Products</span>
+            </h2>
+          </div>
+          <div class="related-products-grid" id="related-products"></div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">◈</span>
-                        <span class="logo-text">NEXUS</span>
-                    </a>
-                    <p class="footer-tagline">Redefining the future of luxury tech shopping.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Shop</h4>
-                    <ul>
-                        <li><a href="products.html">All Products</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 NEXUS. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <span class="logo-icon">◈</span>
+              <span class="logo-text">NEXUS</span>
+            </a>
+            <p class="footer-tagline">
+              Redefining the future of luxury tech shopping.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 NEXUS. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Cart Sidebar -->
     <div id="cart-overlay" class="cart-overlay"></div>
     <aside id="cart-sidebar" class="cart-sidebar">
-        <div class="cart-header">
-            <h3>Your Cart</h3>
-            <button id="cart-close" class="cart-close">&times;</button>
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="cart-close" class="cart-close">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <div class="cart-empty">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+          >
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <p>Your cart is empty</p>
+          <a href="products.html" class="btn btn-secondary">Start Shopping</a>
         </div>
-        <div id="cart-items" class="cart-items">
-            <div class="cart-empty">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg>
-                <p>Your cart is empty</p>
-                <a href="products.html" class="btn btn-secondary">Start Shopping</a>
-            </div>
+      </div>
+      <div id="cart-footer" class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cart-total">$0.00</span>
         </div>
-        <div id="cart-footer" class="cart-footer">
-            <div class="cart-subtotal">
-                <span>Subtotal</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-            <button id="checkout-btn" class="btn btn-primary checkout-btn magnetic-btn">Checkout</button>
-        </div>
+        <button
+          id="checkout-btn"
+          class="btn btn-primary checkout-btn magnetic-btn"
+        >
+          Checkout
+        </button>
+      </div>
     </aside>
 
     <div id="toast-container" class="toast-container"></div>
 
     <!-- JavaScript (Modular) -->
     <script type="module" src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
